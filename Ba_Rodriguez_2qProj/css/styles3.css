@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500&display=swap');
+
+
+
+/*formats the entire page*/
+body, html {
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      scroll-behavior: smooth;
+  }
+/*hover button stuff*/
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+/*changes the font of the paragraphs and lists*/
+p, li {
+  font-family: Open Sans;
+  font-size: 20px;
+}
+/*changes the font for h1*/
+h1 {
+  font-family: Helvetica;
+}
+.subhead {
+  font-family: Open Sans;
+  font-size: 30px;
+}
+
+/*formats iframe*/
+iframe {
+  display: block;
+  margin: auto;
+}
+
+/*formats images*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*random hover stuff*/
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #31162F;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* Forward */
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  padding: 10px 10px;
+  width: 100%;
+  z-index: 100;
+}
+
+
+/*all of these below just format all the divs that are mentioned*/
+
+header a {
+  float: left;
+  color: #31162F;
+  font-family: Montserrat;
+  text-align: center;
+  padding: 15px;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+
+header input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-left: 20px;
+  margin-right: 40px;
+  background-color: #ECECEC;
+  border: none;
+  margin-top: 25px;
+  font-size: 17px;
+  font-family: Montserrat;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(49, 22, 47, 0.8), rgba(49, 22, 47, 0.99)), url("../images/contactusheroimg.jpg");
+  min-height: 1000px; 
+  /*parallax effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+
+.hero-text {
+  text-align: left;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  color: white;
+  font-size: 60px;
+  margin: 0px;
+} 
+
+#herot1 {
+  font-family: Caveat;
+  position: absolute;
+  width: 1000px;
+}
+
+.fillup1 input[type=text] {
+  min-width: 700px;
+  min-height: 40px;
+  background-color: #ECECEC;
+  border: none;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+.fillup2 input[type=text] {
+  min-width: 700px;
+  min-height: 40px;
+  background-color: #ECECEC;
+  border: none;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+.fillup3 input[type=text] {
+  min-width: 700px;
+  min-height: 40px;
+  background-color: #ECECEC;
+  border: none;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+.fillup1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: white;
+}
+
+.fillup1 h1 {
+  font-family: "Hanken Grotesk";
+}
+
+.fillup2 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  color: white;
+}
+
+.fillup2 h1 {
+  font-family: "Hanken Grotesk";
+}
+
+.fillup3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+
+.fillup3 h1 {
+  font-family: "Hanken Grotesk";
+}
+
+.fillup4 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  color: white;
+  background-color: #31162f;
+  width: 10vw;
+  padding: 5px;
+  margin-top: 2%;
+}
+
+.fillup4 h1 {
+  font-family: "Hanken Grotesk";
+  font-size: 30px;
+  text-align: center;
+}
+
+footer {
+  background-color: #31162f;
+  padding: 50px;
+  color: white;
+  padding: 50px;
+  height: 220px;
+}
+footer p {
+    margin: 0;
+}
+#sourcetitle {
+  position: relative;
+
+  max-width: 80%;
+  font-size: 10px;
+}
+#source1 li {
+  position: relative;
+
+  max-width: 80%;
+  font-size: 10px;
+}
+
+.footerimage {
+  left: 80%;
+  position: absolute;
+}
+/*Sprite source: https://www.saintpats.org/parish/social-icons-sprite/*/
+
+.socmedicons {
+  float: right;
+  position: relative;
+  margin-top: 120px;
+
+
+}
+.fb {
+  width: 47px;
+  height: 47px;
+  background:  url(../images/social-icons-sprite.png) 0px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.fb:hover {
+  height: 49px;
+  background:  url(../images/social-icons-sprite.png) 0px -51px;
+}
+
+.twi {
+  width: 47px;
+  height: 47px;
+  background:  url(../images/social-icons-sprite.png) -48px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.twi:hover {
+  height: 49px;
+  background:  url(../images/social-icons-sprite.png) -48px -50px;
+}
+
+.yt {
+  width: 47px;
+  height: 47px;
+  background:  url(../images/social-icons-sprite.png) -94px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.yt:hover {
+  height: 49px;
+  background:  url(../images/social-icons-sprite.png) -94px -50px;
+}
+
+.footertext {
+  font-size: 15px;
+  font-family: Montserrat;
+}
+
+.conus {
+  margin-top: 100px;
+}
+.conustitle {
+  font-size: 20px;
+  font-family: Montserrat;
+}

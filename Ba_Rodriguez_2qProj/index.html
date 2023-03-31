@@ -1,0 +1,195 @@
+<!--THIS WEBSITE IS MEANT TO BE VIEWED ON A 1920x1080 RESOLUTION SCREEN-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+	<title>Free Legal Assistance Group</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Homepage">
+	<meta name="author" content="Revyel L. Rodriguez">
+	<script>
+		<!--
+		var TRange=null;
+		function findString (str) {
+		 if (parseInt(navigator.appVersion)<4) return;
+		 var strFound;
+		 if (window.find) {
+
+		  strFound=self.find(str);
+		  if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+		   strFound=self.find(str)
+		  }
+		  if (!strFound) {
+		   strFound=self.find(str,0,1)
+		   while (self.find(str,0,1)) continue
+		  }
+		 }
+		 else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+
+		  if (TRange!=null) {
+		   TRange.collapse(false)
+		   strFound=TRange.findText(str)
+		   if (strFound) TRange.select()
+		  }
+		  if (TRange==null || strFound==0) {
+		   TRange=self.document.body.createTextRange()
+		   strFound=TRange.findText(str)
+		   if (strFound) TRange.select()
+		  }
+		 }
+		 else if (navigator.appName=="Opera") {
+		  alert ("Opera browsers not supported, sorry...")
+		  return;
+		 }
+		 if (!strFound) alert ("String '"+str+"' not found!")
+		 return;
+		}
+		//-->
+	</script>
+</head>
+
+<body>
+	<header>
+  		<a href="index.html" class="logo">
+  			<img src="images/logo.png" alt="logo image" width=150 height=50>
+  		</a>
+    	<a class="hvr-underline-from-center" href="index.html">HOME</a>
+    	<a href="files/advocacy.html" class="hvr-underline-from-center">OUR ADVOCACY</a>
+    	<a href="files/contactus.html" class="hvr-underline-from-center">CONTACT US</a>
+		<a href="../Rodriguez_3qProj/login.html" class="hvr-underline-from-center">LOG IN</a>
+  		<form name="f1" action="search" onSubmit="if(this.t1.value!=null && this.t1.value!='') findString(this.t1.value);return false">
+    		<input type="text" name=t1 value="" size=20 placeholder="Press enter to search">
+		</form>
+	</header>
+
+	<div class="hero-image">
+  		<div class="hero-text">
+    		<h1 id="herot1">Protecting</h1>
+    		<h1 id="herot2">human rights</h1>
+    		<h1 id="herot3">since 1974.</h1>
+    	</div>
+    	<img src="images/jokerarroyo.png" id="joker" alt="Pic of joker arroyo">
+    	<img src="images/josediokno.png" id="jose" alt="Pic of Jose Diokno">
+    	<img src="images/cheldiokno.png" id="chel" alt="Pic of Chel Diokno">
+    	<h1 id="subtext1">Joker Arroyo</h1>
+    	<h1 id="subtext2">Jose Diokno</h1>
+    	<h1 id="subtext3">Chel Diokno</h1>
+	</div>
+
+	<div class="main-content">
+		<div class="aboutus">
+			<div class="aubox">
+				<h1 id="auboxtitle">What We Are</h1>
+			</div>
+			<img src="images/AboutUs.jpg" id="auboximage" alt="Picture for the about us window" width=500 height=500>
+		</div>
+		<div class="aboutus2">
+			<img src="images/AboutUs2.jpg" id="auboximage2" alt="Picture for the about us window" width=950 height=500>
+			<div class="aubox2">
+				<p id="auboxtitle2">
+					The Free Legal Assistance Group (FLAG) is
+					the largest group of human rights lawyers in
+					the Philippines. Among its many advocacies
+					are those against political repression,
+					military and police abuses, death penalty,
+					extra-judicial killings, and the current bloody
+					war on drugs. 
+					<br>
+					<br>
+					We are committed to the protection and promotion of human rights and civil liberties. FLAG works to help excluded and vilified individuals secure legal documents pertaining to citizenship, land ownership, health, and communal development. It aspires to deepen democracy and transform institutions. 
+				</p>
+			</div>					
+		</div>
+		<br>
+		<div class="history">
+			<h1 id="histitle">History</h1>
+				<img src="images/lorenzo.png" id="lorenzo" alt="Lorenzo Tanada" width=263>
+				<p id="lortext">Lorenzo Tañada</p>
+				<div class="hispara">
+					<p id="hispara1">
+						FLAG was founded in 1974 by Sen. Jose W. Diokno, Sen.
+						Lorenzo M. Tañada and Atty. Joker Arroyo - two years after the
+						1972 proclamation of Martial law under Ferdinand Marcos.
+					</p>
+					<p id="hispara2">
+						Diokno created the law firm right after being released from
+						718 days as the Marcos administration's political prisoner, as a
+						means of supporting human rights victims through a new and
+						innovative method called developmental legal aid.
+					</p>
+					<p id="hispara3">
+					During the dictatorship, FLAG defended farmers and activists
+					who were victims of paramilitary abuses, with Diokno helped
+					even further by giving allowances to clients without any
+					financial means.
+					</p>
+				</div>
+				<p id="hispara4">
+					FLAG's activities sometimes placed lawyers working with them at risk. Numerous FLAG lawyers
+					were murdered during the dictatorship, all of them honored in the Bantayog ng Mga Bayani today.
+				</p>
+		</div>
+		<div class="signup">
+			<h1 class="signupcontent">Get free legal advice now!</h1>
+			<div class="fillupbars">
+				<p class="filluptext">Name</p>
+				 <form id="name">
+    				<input type="text" value="" size=20 placeholder="Juan Dela Cruz">
+				</form>
+				<p class="filluptext">Address</p>
+				 <form id="address">
+    				<input type="text" value="" size=20 placeholder="XXXX, Philippines">
+				</form>
+			</div>
+		</div>
+
+	</div>
+  
+	<footer>
+			<img src="images/LOGOwhite.png" alt="footer logo" class="footerimage" width=300>
+			<h1 id="sourcetitle">Sources</h1>
+			<ul id="source1">
+  					<li>https://en.wikipedia.org/wiki/Free_Legal_Assistance_Group</li>
+  					<li>https://lawyerphilippines.org/recognition-of-foreign-divorce-in-the-philippines-process/attachment/philippine-courtroom/</li>
+  					<li>https://en.wikipedia.org/wiki/Free_Legal_Assistance_Group#/media/File:Free_Legal_Assistance_Group_Freedom_Rally.png</li>
+  					<li>https://www.rappler.com/nation 239106-davao-city-court-first-ever-video-teleconferencing-hearings-philippines-september-2019/</li>
+  					<li>http://www.newsflash.org/2004/02/hl/hl113433.htm</li>
+  					<li>https://news.abs-cbn.com/focus/09/20/17/who-was-jose-w-diokno</li>
+  					<li>https://www.philstar.com/headlines/2021/01/13/2070187/</li>
+  					<li>https://www.philstar.com/headlines/2021/01/13/2070187 ex-solgen-cadiz-chel-diokno-lead-team-lawyers-argue-vs-anti-terrorism-law</li>
+  					<li>https://www.omct.org/en/network-members/free-legal-assistance-group-flag</li>
+
+			</ul>
+
+			<div class="socmedicons">
+				<a href="https://web.facebook.com/revyel.rodriguez.1/" class="fb">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="fblogo" width=1 height=1>
+				</a>
+				<a href="https://twitter.com/barium26" class="twi">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="twitterlogo" width=1 height=1>
+				</a>
+				<a href="https://www.youtube.com/channel/UCwC1a_YYROJ8Yl-wgHdcI5Q" class="yt">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="ytlogo" width=1 height=1>
+				</a>
+			</div>
+
+			<div class="conus">
+				<h1 class="conustitle">Contact Us</h1>
+				<p class="footertext">freelegalaid@gmail.com</p>
+				<p class="footertext">0916XXXXXXX</p>
+				<p class="footertext">Building Y, Manila, Philippines</p>
+
+			</div>
+
+
+			<br>
+	</footer>
+
+</body>
+
+</html>

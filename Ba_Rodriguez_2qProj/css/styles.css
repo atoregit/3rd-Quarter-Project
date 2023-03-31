@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+
+
+
+* {
+  margin: 0; /*formats the entire page*/
+}
+body, html {
+      height: 100%; /*resizes the body*/
+      margin: 0px;  /*resizes the margin*/
+      padding: 0px; /*resizes the padding*/
+      scroll-behavior: smooth; /*smooth scroll*/
+
+  }
+/*hover button stuff*/
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+/*changes the font of the paragraphs and lists*/
+p, li {
+  font-family: Open Sans;
+  font-size: 20px;
+}
+/*changes the font for h1*/
+h1 {
+  font-family: Helvetica;
+}
+
+/*formats iframe*/
+iframe {
+  display: block;
+  margin: auto;
+}
+
+/*formats images*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+/*resizes the margin*/
+div {
+  margin: 0;
+}
+
+/*random hover stuff*/
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #31162F;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+
+header {
+  position: fixed; /*makes the header fixed in position*/
+  background-color: white; /*decoration*/
+  padding: 10px 10px; 
+  width: 100%; /*decoration*/
+  z-index: 100; /*makes the header always at the top*/
+}
+
+/*all of these below just format all the divs that are mentioned*/
+
+header a {
+  float: left;  /*makes the buttons be next to each other*/
+  color: #31162F; /*decoration*/
+  font-family: Montserrat; /*decoration*/
+  text-align: center; /*decoration*/
+  padding: 15px; /*self-explanatory*/
+  margin-right: 50px; /*self-explanatory*/
+  text-decoration: none; /*removes the blue link stuff that <a> has*/
+  font-size: 20px; /*decoration*/
+  line-height: 50px; /*decoration*/
+}
+header input[type=text] {
+  float: right;  /*searchbar at the side*/
+  padding: 6px; /*self-explanatory*/
+  margin-left: 20px; /*self-explanatory*/
+  margin-right: 40px; /*self-explanatory*/
+  background-color: #ECECEC; /*self-explanatory*/
+  border: none; /*self-explanatory*/
+  margin-top: 25px; /*self-explanatory*/ 
+  font-size: 17px; /*self-explanatory*/
+  font-family: Montserrat; /*self-explanatory*/
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+.hero-image {
+  background-image: linear-gradient(#31162fa6, rgba(49, 22, 47, 0.99)), url("../images/home-bg.png");
+  height: 100%; 
+  /*parallax effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0; /*self-explanatory*/
+}
+.hero-text {
+  text-align: left; /*self-explanatory*/
+  position: absolute; /*removes the element from the flow of the webpage*/
+  color: white; /*self-explanatory*/
+  font-size: 50px; /*self-explanatory*/
+  margin: 0px; /*self-explanatory*/
+  top: 15%; /*position*/
+  left: 7%; /*position*/
+} 
+#herot1 {
+  font-family: Noto Serif Display;
+  position: absolute; /*removes the element from the flow of the webpage*/
+}
+#herot2 {
+  font-family: Dancing Script; /*self-explanatory*/
+  position: absolute; /*removes the element from the flow of the webpage*/
+  top: 100px; /*position*/
+  left: 50px; /*position*/
+  width: 600px; /*self-explanatory*/
+}
+#herot3 {
+  font-family: Noto Serif Display; /*self-explanatory*/
+  position: absolute; /*removes the element from the flow of the webpage*/
+  width: 600px; /*self-explanatory*/
+  top: 220px; /*position*/
+  left: 150px;  /*position*/
+}
+
+#joker {
+  position: absolute; /*removes the element from the flow of the webpage*/
+  right: 30%; /*position*/
+  top: 57.5%; /*position*/
+  width: 28%; /*self-explanatory*/
+
+}
+#jose {
+  position: absolute; /*removes the element from the flow of the webpage*/
+  right: 5%; /*position*/
+  top: 39.5%; /*position*/
+  width: 35%; /*self-explanatory*/
+}
+#chel {
+  position: absolute; /*removes the element from the flow of the webpage*/
+  right: 0%; /*position*/
+  top: 39.5%; /*position*/
+  width: 25%; /*self-explanatory*/
+}
+#mainhero {
+  margin: 0; /*self-explanatory*/
+}
+#subtext1 {
+  color: white; /*self-explanatory*/
+  font-size: 100%; /*self-explanatory*/
+  font-family: "Hanken Grotesk"; /*self-explanatory*/
+  position: absolute;  /*removes the element from the flow of the webpage*/
+  top: 53%; /*position*/
+  left: 52%; /*position*/
+  transform: rotate(10deg); /*rotates the text so it looks slanted*/
+}
+#subtext2 {
+  color: white; /*self-explanatory*/
+  font-size: 100%; /*self-explanatory*/
+  font-family: "Hanken Grotesk"; /*self-explanatory*/
+  position: absolute; /*removes the element from the flow of the webpage*/
+  top: 35%; /*position*/
+  left: 70%; /*position*/
+  transform: rotate(-10deg); /*rotates the text so it looks slanted*/
+}
+#subtext3 {
+  color: white; /*self-explanatory*/
+  font-size: 100%;  /*self-explanatory*/
+  font-family: "Hanken Grotesk"; /*self-explanatory*/
+  position: absolute; /*removes the element from the flow of the webpage*/
+  top: 37%;  /*position*/
+  left: 88%;  /*position*/
+  transform: rotate(15deg); /*rotates the text so it looks slanted*/
+}
+
+
+
+
+
+
+
+.main-content {
+  padding: 0; /*self-explanatory*/
+  margin: 0; /*self-explanatory*/
+}
+
+.aboutus {
+  padding: 0; /*self-explanatory*/
+  margin: 0; /*self-explanatory*/
+}
+
+.aubox {
+  position: relative; /*positions relative to the element's old position*/
+  background-color: #31162f; /*self-explanatory*/
+  color: white; /*self-explanatory*/
+  width: 50%; /*self-explanatory*/
+  text-align: center; /*self-explanatory*/
+  line-height: 500px; /*centers the text*/
+  font-family: Caveat, cursive; /*self-explanatory*/
+  margin-top: 0; /*self-explanatory*/
+  float:left; /*self-explanatory*/
+}
+
+#auboximage {
+  float:right;
+  width: 50%;
+  max-height: 500px;
+  z-index: 999;
+}
+
+#auboxtitle {
+  font-size: 150px;
+  font-family: Caveat;
+}
+
+.aboutus2 {
+  padding: 0;
+  margin: 0;
+}
+
+.aubox2 {
+  background-color: #31162f;
+  color: white;
+  width: 50%;
+  text-align: center;
+  max-height: 500px;
+  max-width: 913px;
+  font-family: Caveat, cursive;
+  margin-top: 0;
+  float: right;
+  line-height: 500px;
+  padding: 0 20px 0 20px;
+}
+
+#auboximage2 {
+  float: left;
+}
+
+#auboxtitle2 {
+  font-size: 25px;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  position: relative;
+  font-family: Nunito;
+}
+
+
+
+
+
+
+.history {
+  margin: 100px;
+  display: inline;
+
+}
+#histitle {
+  position: relative;
+  max-height: 200px;
+  max-width: 200px;
+  left: 10%;
+  font-size: 100px;
+  font-family: Caveat, cursive;
+
+}
+#lorenzo {
+  float: right;
+  position: relative;
+  right: 13%;
+}
+#lortext {
+  float: right;
+  position: relative;
+  left: 5%;
+  font-weight: bold;
+  font-size: 18px;
+}
+.hispara {
+  max-width: 60%;
+  position: relative;
+  left: 10%;
+
+}
+#hispara1 {
+  font-size: 25px;
+  margin-top: 25px;
+  font-family: Nunito;
+}
+#hispara2 {
+  font-size: 25px;
+  margin-top: 25px;
+  font-family: Nunito;
+}
+#hispara3 {
+  font-size: 25px;
+  margin-top: 25px;
+  font-family: Nunito;
+}
+#hispara4 {
+  font-size: 25px;
+  margin-top: 25px;
+  max-width: 80%;
+  position: relative;
+  left: 10%;
+  font-family: Nunito;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+.signup {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(49, 22, 47, 0.65), rgba(49, 22, 47, 1)), url(../images/signup.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signupcontent {
+  font-size: 75px;
+  position: relative;
+  top: 30%;
+  left: 5%;
+  max-width: 700px;
+  text-align: center;
+  font-family: Noto Serif Display;
+  color: white;
+}
+.fillupbars {
+  position: relative;
+  right: 6%;
+  bottom: 10%;
+  float: right;
+}
+.signup input[type=text] {
+  min-width: 700px;
+  min-height: 40px;
+  background-color: #ECECEC;
+  border: none;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+.filluptext {
+  color: white;
+  font-family: Nunito;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#name {
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: #31162f;
+  padding: 50px;
+  color: white;
+  padding: 50px;
+  height: 220px;
+}
+#sourcetitle {
+  position: relative;
+
+  max-width: 80%;
+  font-size: 10px;
+}
+#source1 li {
+  position: relative;
+
+  max-width: 80%;
+  font-size: 10px;
+}
+#source1 {
+  margin-bottom: 25px;
+}
+.footerimage {
+  left: 80%;
+  position: absolute;
+}
+/*Sprite source: https://www.saintpats.org/parish/social-icons-sprite/*/
+
+.socmedicons {
+  float: right;
+  position: relative;
+
+
+}
+.fb {
+  width: 47px;
+  height: 47px;
+  background:  url(images/social-icons-sprite.png) 0px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.fb:hover {
+  height: 49px;
+  background:  url(images/social-icons-sprite.png) 0px -51px;
+}
+
+.twi {
+  width: 47px;
+  height: 47px;
+  background:  url(images/social-icons-sprite.png) -48px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.twi:hover {
+  height: 49px;
+  background:  url(images/social-icons-sprite.png) -48px -50px;
+}
+
+.yt {
+  width: 47px;
+  height: 47px;
+  background:  url(images/social-icons-sprite.png) -94px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.yt:hover {
+  height: 49px;
+  background:  url(images/social-icons-sprite.png) -94px -50px;
+}
+
+.footertext {
+  font-size: 15px;
+  font-family: Montserrat;
+}
+
+.conustitle {
+  font-size: 20px;
+  font-family: Montserrat;
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-fluid {
+    padding: 0;
+
+}
+
+nav {
+    background-color: #311623; /*decoration*/
+}
+nav a {
+    color:white;
+    margin-right: 50px; /*self-explanatory*/
+    font-size: 20px; /*decoration*/
+    font-family: Montserrat;
+}
+.navbar-header {
+    padding-left: 5%;
+}
+.navbar-brand {
+    font-family: Caveat;
+    font-size: 3rem;
+}
+
+.cover-image {
+    position: relative;
+    height: 100vh;
+    background: url('https://assets.rappler.com/97D8BEA4122D47AB816D2EC20CF70A94/img/610FFCF3A8204EF9AC55B5C395BF1104/sc-oral-arguments-war-on-drugs-november-21-2017-005.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.cover-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#31162fa6, rgba(40, 22, 47, 0.79));
+}
+
+.back {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.div-center {
+  width: 600px;
+  height: 500px;
+  background-color: #311623;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 1em 2em;
+  display: table;
+}
+
+div.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#logintitle {
+    font-size: 50px;
+    color: white;
+    font-family: Caveat;
+
+} 
+
+.tag {
+    color: white;
+    font-family: Montserrat;
+
+}
+
+.submitbutton {
+        background-color: white;
+        border: none;
+        color:#311623;
+        font-family: Montserrat;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
+
+.forgot {
+    color: white;
+    font-family: Montserrat;
+}
+
+.info {
+    padding: 40px;
+    width: 100%;
+    height: auto;
+  }
+
+.infotext {
+    font-family: Montserrat;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+}
+
+footer {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    background-color: #31162f;
+    padding: 50px;
+    color: white;
+    padding: 50px;
+    height: 220px;
+}
+#sourcetitle {
+  position: relative;
+
+  max-width: 80%;
+  font-size: 10px;
+}
+#source1 li {
+  position: relative;
+
+  max-width: 80%;
+  font-size: 10px;
+}
+#source1 {
+  margin-bottom: 25px;
+}
+.footerimage {
+  left: 80%;
+  position: absolute;
+}
+/*Sprite source: https://www.saintpats.org/parish/social-icons-sprite/*/
+
+.socmedicons {
+  float: right;
+  position: relative;
+  bottom: 50;
+}
+.fb {
+  width: 47px;
+  height: 47px;
+  background:  url(https://cdn.discordapp.com/attachments/883586026327662632/1091348356544077865/social-icons-sprite.png) 0px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.fb:hover {
+  height: 49px;
+  background:  url(https://cdn.discordapp.com/attachments/883586026327662632/1091348356544077865/social-icons-sprite.png) 0px -51px;
+}
+
+.twi {
+  width: 47px;
+  height: 47px;
+  background:  url(https://cdn.discordapp.com/attachments/883586026327662632/1091348356544077865/social-icons-sprite.png) -48px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.twi:hover {
+  height: 49px;
+  background:  url(https://cdn.discordapp.com/attachments/883586026327662632/1091348356544077865/social-icons-sprite.png) -48px -50px;
+}
+
+.yt {
+  width: 47px;
+  height: 47px;
+  background:  url(https://cdn.discordapp.com/attachments/883586026327662632/1091348356544077865/social-icons-sprite.png) -94px 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.yt:hover {
+  height: 49px;
+  background:  url(https://cdn.discordapp.com/attachments/883586026327662632/1091348356544077865/social-icons-sprite.png) -94px -50px;
+}
+
+.footertext {
+  font-size: 15px;
+  font-family: Montserrat;
+}
+
+.conustitle {
+  font-size: 20px;
+  font-family: Montserrat;
+}

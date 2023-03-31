@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log in to FLAG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style_login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+      <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="../Ba_Rodriguez_2qProj/index.html">Go back to Home</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+      </nav>
+      <div class="cover-image">
+          <div class="div-center">
+            <div class="content">
+              <h1 id="logintitle">Login to FLAG</h1>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <p class="tag" id="unameTag">Username</p>
+                  <input type="text" class="form-control" id="inputname" onClick="changeBg1()">
+                </div>
+                <div class="form-group">
+                  <p class="tag" id="passwTag">Password</p>
+                  <input type="password" class="form-control" id="inputpass" onClick="changeBg2()">
+                </div>
+                <button type="button" class="submitbutton" onClick="recieveInput()">Login</button>
+                <hr>
+                <a href="#" class="forgot">Forgot your password?</a>
+              </form>
+            </div>
+            </span>
+          </div>
+      </div>
+      <div class="info">
+        <img class="logo" src="..\Ba_Rodriguez_2qProj\images\LOGO.png" alt="logo image" width=300 height=120>
+          <p class="infotext">
+              FLAG (Free Legal Assistance Group) advocates against political repression, military and police abuses, death penalty, extra-judicial killings, and the current bloody war on drugs. If you are passionate about protecting and promoting human rights and civil liberties and share similar advocacies as FLAG, you might consider joining us in our cause. As a member of FLAG, you can make a difference in promoting justice and equality in society, advocating for the rule of law, and protecting the rights of the marginalized and oppressed.
+          </p>
+      </div>
+      <footer>
+        <div class="conus">
+          <h1 class="conustitle">Contact Us</h1>
+          <p class="footertext">freelegalaid@gmail.com</p>
+          <p class="footertext">0916XXXXXXX</p>
+          <p class="footertext">Building Y, Manila, Philippines</p>
+        </div>
+        <br>
+        <div class="socmedicons">
+          <a href="https://www.facebook.com/FLAGMetroManila/" class="fb">
+            <img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="fblogo" width=1 height=1>
+          </a>
+          <a href="https://twitter.com/ChelDiokno" class="twi">
+            <img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="twitterlogo" width=1 height=1>
+          </a>
+          <a href="https://www.youtube.com/channel/UCwC1a_YYROJ8Yl-wgHdcI5Q" class="yt">
+            <img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="ytlogo" width=1 height=1>
+          </a>
+        </div>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

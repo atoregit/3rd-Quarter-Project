@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/styles2.css">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<title>Our Advoacy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="this is about US!">
+
+	<script language="JavaScript">
+		<!--
+		var TRange=null;
+		function findString (str) {
+		 if (parseInt(navigator.appVersion)<4) return;
+		 var strFound;
+		 if (window.find) {
+
+		  // CODE FOR BROWSERS THAT SUPPORT window.find
+		  strFound=self.find(str);
+		  if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+		   strFound=self.find(str)
+		  }
+		  if (!strFound) {
+		   strFound=self.find(str,0,1)
+		   while (self.find(str,0,1)) continue
+		  }
+		 }
+		 else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+		  // EXPLORER-SPECIFIC CODE
+
+		  if (TRange!=null) {
+		   TRange.collapse(false)
+		   strFound=TRange.findText(str)
+		   if (strFound) TRange.select()
+		  }
+		  if (TRange==null || strFound==0) {
+		   TRange=self.document.body.createTextRange()
+		   strFound=TRange.findText(str)
+		   if (strFound) TRange.select()
+		  }
+		 }
+		 else if (navigator.appName=="Opera") {
+		  alert ("Opera browsers not supported, sorry...")
+		  return;
+		 }
+		 if (!strFound) alert ("String '"+str+"' not found!")
+		 return;
+		}
+		//-->
+	</script>
+</head>
+
+<body>
+	<header>
+  		<a href="index.html" class="logo">
+  			<img src="../images/logo.png" alt="logo image" width=150 height=50>
+  		</a>
+    	<a class="hvr-underline-from-center" href="../index.html">HOME</a>
+    	<a href="advocacy.html" class="hvr-underline-from-center">OUR ADVOCACY</a>
+    	<a href="contactus.html" class="hvr-underline-from-center">CONTACT US</a>
+  		<form name="f1" action="search" onSubmit="if(this.t1.value!=null && this.t1.value!='') findString(this.t1.value);return false">
+    		<input type="text" name=t1 value="" size=20 placeholder="Press enter to search">
+		</form>
+	</header>
+
+	<div class="hero-image" id="heroimage">
+  		<div class="hero-text">
+    		<h1 id="herot1">Our Advocacy</h1>
+    	</div>
+    	<div class="intropar">
+    		<p id="ip1">
+    			Beatrice  Belén is an indigenous leader from Innabuyog, a women's alliance in Cordillera region. In October  2020, Betty was arrested by a team from the Philippine National Police, being accused for possession of three grenades. They were planted. These are just one of many cases of people getting falsely accused in the Philippines ( Bengwayan-anongos, 2021).
+    		</p>
+    		<iframe width="560" height="315" src="https://www.youtube.com/embed/zNIqGlegQ4k?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    		<p id="ip2">
+    			The Free Legal Assistance Group advocates for providing help for people who do not enough money to get a good lawyer. We believe that every man, woman, and child in this country have rights, and it is our outmost priority to defend them.
+    		</p>
+    		<h1 id="ip3">TOGETHER, WE CAN FIGHT THE BITTER HAND OF INJUSTICE.</h1>
+  		</div>
+
+	</div>
+
+	<div class="main-content">
+		<div class="joinbox">
+			<h1 id="joinboxtitle">JOIN US NOW!</h1>
+			<p id="joinboxsub">Email Address</p>
+		  	<form id="joinbar">
+				<input type="text" placeholder="johndoe@email.com">
+			</form>
+		</div>
+		<div class="morecases">
+			<h1 id="morecasestitle">SEE MORE CASES</h1>
+			<hr class="border">
+			<div id="medias">
+				<a href="https://debatesindigenas.org/ENG/ns/100-Philippines-accusations-persecution-imprisionment.html" id="case1">
+					<img src="../images/Mariano.jpg" alt="Image for mariano" width=400>
+				</a>
+				<a href="https://debatesindigenas.org/ENG/ns/100-Philippines-accusations-persecution-imprisionment.html" id="case2">
+					<img src="../images/Narag.jpg" alt="Image for narag" width=400>
+				</a>
+			</div>
+			<hr class="border">	
+		</div>
+		<div class="whyipicked">
+			<h1 id="wiptitle">Why did I choose this?</h1>
+			<img src="../images/justice.png" id="wipimage" alt="Blindfolded woman holding weights" width=500>
+			<p id="wipmain">
+				Being jailed for a crime that I did not commit is for me, one of
+				the worst things that can happen to me. It makes it even more
+				tragic if it could be easily be solved if they had a little bit more
+				money. This is why this advocacy has a very noble objective, and
+				that they are the ones that truly give hope to the hopeless
+				without discrimination. 
+			</p>
+			<p id="wipmain2">
+				They were the beacons of light during
+				the dark of the Marcos dictatorship, and they continue to be
+				today. Moreover, I cannot appreciate enough how courageous
+				they are to keep defending human rights even faced with threats
+				of death and torture. This is why I chose this advocacy.
+			</p>
+		</div>
+	</div>
+
+	
+
+	
+	<footer>
+			<img src="../images/LOGOwhite.png" alt="footer logo" class="footerimage" width=300>
+			<h1 id="sourcetitle">Sources</h1>
+			<ul id="source1">
+  					<li>
+  						Bengwayan-anongos, A. (2021, April 1). Philippines: False accusations, persecution - debates indigenas. Debates Indigenas. Retrieved
+                        December 12, 2022, from https://debatesindigenas.org/ENG/ns/100-Philippines-accusations-persecution-imprisionment.html
+  					</li>
+  					<li>
+  						Erickson, H. (2018, June 14). Wrongly jailed for almost seven years, professor works to reform Filipino prisons. SIU News. Retrieved
+                        December 12, 2022, from https://news.siu.edu/2018/06/061418-siu-professor-works-to-reform-filipino-prisons.php
+  					</li>
+
+			</ul>
+
+			<div class="socmedicons">
+				<a href="https://web.facebook.com/revyel.rodriguez.1/" class="fb">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="fblogo" width=1 height=1>
+				</a>
+				<a href="https://twitter.com/barium26" class="twi">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="twitterlogo" width=1 height=1>
+				</a>
+				<a href="https://www.youtube.com/channel/UCwC1a_YYROJ8Yl-wgHdcI5Q" class="yt">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="ytlogo" width=1 height=1>
+				</a>
+			</div>
+
+			<div class="conus">
+				<h1 class="conustitle">Contact Us</h1>
+				<p class="footertext">freelegalaid@gmail.com</p>
+				<p class="footertext">0916XXXXXXX</p>
+				<p class="footertext">Building Y, Manila, Philippines</p>
+
+			</div>
+
+
+			<br>
+	</footer>
+
+</body>
+</html>

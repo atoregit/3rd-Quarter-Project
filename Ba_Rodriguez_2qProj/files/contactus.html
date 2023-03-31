@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/styles3.css">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="this is about US!">
+
+	<script language="JavaScript">
+		<!--
+		var TRange=null;
+		function findString (str) {
+		 if (parseInt(navigator.appVersion)<4) return;
+		 var strFound;
+		 if (window.find) {
+
+		  // CODE FOR BROWSERS THAT SUPPORT window.find
+		  strFound=self.find(str);
+		  if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+		   strFound=self.find(str)
+		  }
+		  if (!strFound) {
+		   strFound=self.find(str,0,1)
+		   while (self.find(str,0,1)) continue
+		  }
+		 }
+		 else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+		  // EXPLORER-SPECIFIC CODE
+
+		  if (TRange!=null) {
+		   TRange.collapse(false)
+		   strFound=TRange.findText(str)
+		   if (strFound) TRange.select()
+		  }
+		  if (TRange==null || strFound==0) {
+		   TRange=self.document.body.createTextRange()
+		   strFound=TRange.findText(str)
+		   if (strFound) TRange.select()
+		  }
+		 }
+		 else if (navigator.appName=="Opera") {
+		  alert ("Opera browsers not supported, sorry...")
+		  return;
+		 }
+		 if (!strFound) alert ("String '"+str+"' not found!")
+		 return;
+		}
+		//-->
+	</script>
+</head>
+
+<body>
+	<header>
+  		<a href="index.html" class="logo">
+  			<img src="../images/logo.png" alt="logo image" width=150 height=50>
+  		</a>
+    	<a class="hvr-underline-from-center" href="../index.html">HOME</a>
+    	<a href="advocacy.html" class="hvr-underline-from-center">OUR ADVOCACY</a>
+    	<a href="contactus.html" class="hvr-underline-from-center">CONTACT US</a>
+  		<form name="f1" action="search" onSubmit="if(this.t1.value!=null && this.t1.value!='') findString(this.t1.value);return false">
+    		<input type="text" name=t1 value="" size=20 placeholder="Press enter to search">
+		</form>
+	</header>
+
+	<div class="hero-image" id="heroimage">
+  		<div class="hero-text">
+    		<h1 id="herot1">Contact Us!</h1>
+    	</div>
+    	<div class="fillup1">
+    		<h1>Name</h1>
+		  	<form>
+				<input type="text" placeholder="John Doe">
+			</form>
+		</div>
+		<div class="fillup2">
+			<h1>Home Address</h1>
+		  	<form>
+				<input type="text" placeholder="johndoe@email.com">
+			</form>
+		</div>
+		<div class="fillup3">
+			<h1>Reason</h1>
+		  	<form>
+				<input type="text" placeholder="Please be short and consise.">
+			</form>
+		</div>
+		<div class="fillup4">
+			<a href="#">
+				<h1>SEND</h1>
+			</a>
+		</div>
+	</div>
+
+		<footer>
+			<img src="../images/LOGOwhite.png" alt="footer logo" class="footerimage" width=300>
+			<h1 id="sourcetitle">Sources</h1>
+
+			<ul id="source1">
+  			<li>https://www.peoplesdomain.net/up-visayas-formed-clag/</li>
+  			</ul>
+
+			<div class="socmedicons">
+				<a href="https://web.facebook.com/revyel.rodriguez.1/" class="fb">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="fblogo" width=1 height=1>
+				</a>
+				<a href="https://twitter.com/barium26" class="twi">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="twitterlogo" width=1 height=1>
+				</a>
+				<a href="https://www.youtube.com/channel/UCwC1a_YYROJ8Yl-wgHdcI5Q" class="yt">
+					<img src="https://www.transparenttextures.com/patterns/asfalt-light.png" alt="ytlogo" width=1 height=1>
+				</a>
+			</div>
+
+			<div class="conus">
+				<h1 class="conustitle">Contact Us</h1>
+				<p class="footertext">freelegalaid@gmail.com</p>
+				<p class="footertext">0916XXXXXXX</p>
+				<p class="footertext">Building Y, Manila, Philippines</p>
+
+			</div>
+	</footer>
+
+</body>
+</html>
